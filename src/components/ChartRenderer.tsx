@@ -138,8 +138,7 @@ export function ChartRenderer({ chartSpec, data }: ChartRendererProps) {
                 labelLine={{ stroke: 'rgba(255,255,255,0.2)' }}
               >
                 {data.map((_, index) => (
-                  <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]}
-                    stroke="transparent" />
+                  <Cell key={`cell-${index}`} fill={COLORS[index % COLORS.length]} stroke="transparent" />
                 ))}
               </Pie>
             </PieChart>
