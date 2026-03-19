@@ -14,7 +14,6 @@
   --accent: #6c63ff;
   --accent-glow: rgba(108,99,255,0.25);
   --accent-2: #ff6b9d;
-  --accent-2-glow: rgba(255,107,157,0.2);
   --accent-green: #00d4a0;
   --accent-amber: #ffb84d;
   --font-display: 'Syne', sans-serif;
@@ -51,7 +50,6 @@ html, body, #root {
 .animate-fade-up { animation: fadeSlideUp 0.3s ease forwards; }
 .animate-spin { animation: spin 1s linear infinite; }
 .animate-float { animation: float 3s ease-in-out infinite; }
-
 .msg-bubble { animation: fadeSlideUp 0.25s ease forwards; }
 
 .glow-btn {
@@ -63,26 +61,6 @@ html, body, #root {
 }
 .glow-btn:active { transform: translateY(0); }
 
-.skeleton {
-  background: linear-gradient(90deg, #161820 25%, #1c1f28 50%, #161820 75%);
-  background-size: 200% 100%;
-  animation: shimmer 1.5s infinite;
-}
-
 .typing-dot { animation: blink 1.4s infinite; }
 .typing-dot:nth-child(2) { animation-delay: 0.2s; }
 .typing-dot:nth-child(3) { animation-delay: 0.4s; }
-
-.gradient-border {
-  position: relative;
-  border: 1px solid transparent;
-  background-clip: padding-box;
-}
-.gradient-border::before {
-  content: '';
-  position: absolute;
-  inset: -1px;
-  border-radius: inherit;
-  background: linear-gradient(135deg, rgba(108,99,255,0.4), rgba(255,107,157,0.2), transparent);
-  z-index: -1;
-}
